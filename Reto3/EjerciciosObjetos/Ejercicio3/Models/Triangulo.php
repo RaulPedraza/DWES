@@ -4,11 +4,11 @@ require_once "Poligono.php";
 class Triangulo extends Poligono {
 
     public function area(){
-        $anchura = parent::getAnchura();
-        $altura = parent::getAltura();
+        $anchura = $this->anchura;
+        $altura = $this->altura;
 
         $area = ($anchura * $altura) / 2;
 
-        echo $area;
+        echo "<p>El area del triangulo es de " . $area . "</p>";
     }
 }

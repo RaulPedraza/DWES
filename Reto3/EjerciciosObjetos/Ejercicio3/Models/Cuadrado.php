@@ -4,11 +4,11 @@ require_once "Poligono.php";
 class Cuadrado extends Poligono {
 
     public function area(){
-        $anchura = parent::getAnchura();
-        $altura = parent::getAltura();
+        $anchura = $this->anchura;
+        $altura = $this->altura;
 
         $area = $anchura * $altura;
 
-        echo $area;
+        echo "<p>El area del cuadrado es de " . $area . "</p>";
     }
 }
